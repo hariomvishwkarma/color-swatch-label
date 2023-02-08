@@ -1,5 +1,5 @@
 step - 1
-Goto main-product page and search this
+Goto main-product page and find this code
 {%- unless product.has_only_default_variant -%}
 after find above code paste below code below above code
 
@@ -55,5 +55,6 @@ after find above code paste below code below above code
         </script>
         </variant-radios>
 {%- elsif block.settings.picker_type == 'button' -%}
-
+---------------------------------------------------------------------------------------------------------------------
+step-2
 and delete this code - {%- if block.settings.picker_type == 'button' -%}
