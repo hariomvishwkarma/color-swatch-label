@@ -66,3 +66,42 @@ paste below code at schema
               "value": "colorswatch",
               "label": "colorswatch"
             }
+-----------------------------------------------------------------------------------------------------------------------------
+step-4
+add this vss at base.css at bottom
+
+.cus-label-0 label {
+    width: 50px;
+    height: 40px;
+    border-radius: 6px !important;
+}
+.cus-label-0 input[type=radio]:checked+label {
+    background-color: #9c9c9c !important;
+    border-radius: 5px;
+}
+.cus-label-1 input[type=radio]+label {
+    border-radius: 5px !important;
+}
+.unavailable+label {
+    color: #e8e8e1 !important;
+    border-color:#e8e8e1 !important;
+    pointer-events: none;
+    
+}
+.unavailable:checked+label {
+    background-color: #e8e8e1 !important;
+    border-color:#e8e8e1 !important;
+    color:white !important;
+}
+.unavailable+label:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid;
+    border-color: #e8e8e1;
+    border-color: var(--colorBorder);
+    transform: rotate(45deg);
+}
+
