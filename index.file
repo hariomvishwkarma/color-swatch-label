@@ -58,3 +58,11 @@ after find above code paste below code below above code
 ---------------------------------------------------------------------------------------------------------------------
 step-2
 and delete this code - {%- if block.settings.picker_type == 'button' -%}
+
+------------------------------------------------------------------------------------------------------------------------
+step-3
+paste below code at schema
+            {
+              "value": "colorswatch",
+              "label": "colorswatch"
+            }
