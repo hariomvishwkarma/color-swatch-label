@@ -9,7 +9,7 @@ Find this code -
 {% render 'custom-collection-price', product: card_product, price_class: '' %}
 If you don't want decimal then use this code.
 {% render 'price', product: card_product, price_class: '' %}
-
+https://prnt.sc/6bBgbMMZPay6
 
 step - 1
 Goto main-product page and find this code
