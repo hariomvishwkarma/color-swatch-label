@@ -7,7 +7,6 @@ Go to card-product.liquid
 step-4
 Find this code -
 {% render 'custom-collection-price', product: card_product, price_class: '' %}
-step-5
 If you don't want decimal then use this code.
 {% render 'price', product: card_product, price_class: '' %}
 
