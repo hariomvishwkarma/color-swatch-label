@@ -1,57 +1,7 @@
-min width 990
-summary.header__menu-item.list-menu__item.link.focus-inset span {
-    color: white;
-}
-https://reflawless.com/?_ab=0&_fd=0&_sc=1&key=63a15a8509e74f0322b01d4e4b2ac144bf1d83521e12a441c755268ed7efd88d&preview_theme_id=143913615634
-
-
-.template-search__search {
-    display: none;
-}
-a.header__heading-link.link.link--text.focus-inset {
-    width: 20%;
-}
-
-saperate line remove
-
-1.  420 
-backgroun color and text color
-search this code - {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-
-after fint above code paste below code at below
-
-{%- if section.settings.custom_header__inline-menu -%}
-<nav class="header__inline-menu custom_header__inline-menu" style="background-color:{{ section.settings.custom_header__inline-menu }};">
 
 
 
-2.find this code-464
-
-<a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-
-after find paste blow code below above code
-
-{%- if section.settings.custom-header-menu-font-color -%}
-  <span {%- if link.current %} class="header__active-menu-item custom-header-menu-font-color"{% endif %} id="custom-header-menu-font-color" style="color:{{ section.settings.custom-header-menu-font-color }};">{{ link.title | escape }}</span>
-{% endif %}
-
-
-paste header.liquid file this code at last
-{
-  "type": "color",
-  "id": "custom_header__inline-menu",
-  "label": "Menu Background color"
-},
-{
-  "type": "color",
-  "id": "custom-header-menu-font-color",
-  "label": "Menu Font color"
-}
-
-
-
-
-https://prnt.sc/QUFItK7tqSff
+https://prnt.sc/VQYlAz2Ns_cx
 
 https://reflawless.com/?_ab=0&_fd=0&_sc=1&key=210b9f95ef09d88541d2fafa0a1b7baebb229368c8aaf5ba5a83d7fdc416917c&preview_theme_id=143913615634
 
