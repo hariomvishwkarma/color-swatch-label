@@ -1,4 +1,9 @@
 min width 990
+summary.header__menu-item.list-menu__item.link.focus-inset span {
+    color: white;
+}
+
+
 
 .template-search__search {
     display: none;
