@@ -1,3 +1,98 @@
+<style>
+.slideUp {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  transition: transform .2s ease-out;
+      z-index: -1;
+    position: relative;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: transform .2s ease-out;
+      z-index: -1;
+    position: relative;
+}
+</style>
+
+
+<script>
+// $(document).ready(function(){
+//    $(window).scroll(function() {
+//       if ($(this).scrollTop()>10)
+//        {
+//           $('.custom_header__inline-menu').slideUp(100);
+//        }
+//       else
+//        {
+//         $('.custom_header__inline-menu').slideDown(100);
+//        }
+//    });
+// });
+
+
+
+  
+// $(document).ready(function(){
+// var lastScrollTop = 0;
+// $(window).scroll(function(event){
+//    var st = $(this).scrollTop();
+//    if (st > lastScrollTop){
+//        $('.custom_header__inline-menu').css('visibility', "hidden" );
+//    } else {
+//       $('.custom_header__inline-menu').css('visibility', "visible");
+//    }
+//    lastScrollTop = st;
+// });
+// });
+
+
+ 
+// var header = document.querySelector(".custom_header__inline-menu");
+// var navbarHeight = header.offsetHeight;
+// var lastScrollTop = 0;
+
+// window.onscroll = function() {scrollHide()};
+
+// function scrollHide() {
+//   var st = window.pageYOffset || document.documentElement.scrollTop;
+//   console.log(st);
+//   if (st > lastScrollTop) {
+//     header.classList.add('hide');
+//   } else {
+//     header.classList.remove('hide');
+//   }
+//   lastScrollTop = st <= 0 ? 0 : st;
+// }
+
+
+var new_scroll_position = 0;
+var last_scroll_position;
+var header = document.getElementById("custom_header__inline-menu");
+
+window.addEventListener('scroll', function(e) {
+  last_scroll_position = window.scrollY;
+
+  // Scrolling down
+  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+    // header.removeClass('slideDown').addClass('slideUp');
+    header.classList.remove("slideDown");
+    header.classList.add("slideUp");
+
+  // Scrolling up
+  } else if (new_scroll_position > last_scroll_position) {
+    // header.removeClass('slideUp').addClass('slideDown');
+    header.classList.remove("slideUp");
+    header.classList.add("slideDown");
+  }
+
+  new_scroll_position = last_scroll_position;
+});  
+</script>
+
+
+
 
 https://reflawless.com/?_ab=0&_fd=0&_sc=1&key=63a15a8509e74f0322b01d4e4b2ac144bf1d83521e12a441c755268ed7efd88d&preview_theme_id=144085188882
 
