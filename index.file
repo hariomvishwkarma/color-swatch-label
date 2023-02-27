@@ -1,3 +1,7 @@
+facet-filters-form.facets.small-hide {
+    display: none;
+}
+
 <style>
 .slideUp {
   -webkit-transform: translateY(-100px);
